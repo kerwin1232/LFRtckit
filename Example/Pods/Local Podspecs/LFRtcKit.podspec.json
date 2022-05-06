@@ -1,0 +1,36 @@
+{
+  "name": "LFRtcKit",
+  "version": "0.1.0",
+  "summary": "RtcKit of LiveFuller",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://codeup.teambition.com/5d009edc70f86b0001109ad2/common/ios/LivefullerDC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kerwin": "kerwin1232@163.com"
+  },
+  "source": {
+    "git": "https://codeup.teambition.com/5d009edc70f86b0001109ad2/common/ios/LivefullerDC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "vendored_frameworks": [
+    "LFRtcKit/Classes/LiveFullerDC.framework"
+  ],
+  "public_header_files": "LFRtcKit/Classes/Header/*.h",
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 arm64 armv7 armv7s"
+  },
+  "dependencies": {
+    "AgoraRtcEngine_iOS": [
+      "~> 3.6.1"
+    ],
+    "AgoraRtm_iOS": [
+      "~> 1.4.8"
+    ]
+  }
+}
