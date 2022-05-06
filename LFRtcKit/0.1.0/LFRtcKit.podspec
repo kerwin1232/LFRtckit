@@ -21,22 +21,22 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://codeup.teambition.com/5d009edc70f86b0001109ad2/common/ios/LivefullerDC'
+  s.homepage         = 'https://github.com/kerwin1232/LFRtckit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'kerwin' => 'kerwin1232@163.com' }
-  s.source           = { :git => 'https://codeup.teambition.com/5d009edc70f86b0001109ad2/common/ios/LivefullerDC.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/kerwin1232/LFRtckit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.vendored_frameworks = 'LFRtcKit/Classes/LiveFullerDC.framework'
 
-  s.source_files = 'LFRtcKit/Classes/**/*'
-  s.public_header_files = 'LFRtcKit/Classes/Header/*.h'
+#  s.source_files = 'LFRtcKit/Classes/**/*'
   # s.resource_bundles = {
   #   'LFRtcKit' => ['LFRtcKit/Assets/*.png']
   # }
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 arm64 armv7 armv7s' }
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.public_header_files = 'Pod/Classes/Header/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'AgoraRtcEngine_iOS', '~> 3.6.1'
   s.dependency 'AgoraRtm_iOS','~> 1.4.8'
